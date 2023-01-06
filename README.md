@@ -3,3 +3,4 @@ This project is a web-based tool that utilizes the Google Maps API to allow user
 The project calculates the distance between the origin and destination and displays it on the map, making it a useful tool for trip planning. 
 The user can input their desired locations using a form, and can add or remove waypoints as desired. 
 The project is a convenient and easy-to-use tool for finding and mapping out routes for any journey or trip.
+NOTE : It is recommended to use your own Google Map API Key.
