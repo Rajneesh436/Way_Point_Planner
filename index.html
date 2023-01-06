@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance between two Places App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1>Let's calculate <b>distance</b> from Google maps</h1>
+
+            <div id="googleMap">
+
+            </div>
+
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="from" class="col-xs-2 control label"><i class="fa-regular fa-circle-dot"></i></label>
+                    <div class="col-xs-4">
+                        <input type="text" id="from" placeholder="Origin" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Button To Add Stop  -->
+                <div class="haltButton">
+                    <button type="submit" id="haltButton"><i class="fa-solid fa-plus"></i> Add another stop</button>
+                </div>
+
+
+                <!-- Text-Box after onclick add button -->
+                <div class="form-group" id="myTextBox" style="display: none;">
+                    <i class="fa-regular fa-circle-dot"></i>
+                    <div class="col-xs-4">
+                        <input type="text" id="stop" placeholder="Add one stop" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Button To Delete Stop  -->
+                <div id="removeStop" style="display: none;">
+                    <button type="submit"><i class="fa-solid fa-minus"></i> Delete stop</button>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="to" class="col-xs-2 control label"><i class="fas fa-map-marker-alt"></i></label>
+                    <div class="col-xs-4">
+                        <input type="text" id="to" placeholder="destination" class="form-control">
+                    </div>
+                </div>
+            </form>
+            <div class="col-xs-offset-2 col-xs-10 myButton">
+                <button type="button" id="myButton" class="btn btn-primary btn-lg">calculate</button>
+            </div>
+        </div>
+
+        <div class="OutputDistance">
+            <b style="font-size: x-large;">Distance: </b><span id="inputDistance"> </span>
+        </div> 
+        <!-- A div to print distance  -->
+        <div id="output" class="distance">
+            
+        </div>
+    </div>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+body{
+    color:#151c1f;
+    font-family: "poppins", "sans-serif";
+}
+
+.jumbotron{
+    background-color: transparent;
+    margin: 0;
+    padding: 10px;
+}
+
+.jumbotron h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.jumbotron h1,
+.jumbotron p{
+    text-align: center;
+}
+
+.jumbotron p{
+    font-size: 1em;
+}
+
+#googleMap{
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    text-align: right;
+}
+
+.col-xs-4{
+    max-width: 40%;
+    border: 1rem;
+    border-color: #151c1f;
+    border-width: 5px;
+   
+}
+
+.myButton{
+    text-align: center;
+    margin-top: -100px;
+}
+
+#myButton{
+    border-radius: 100px;
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    margin-left: 5rem;
+}
+
+.distance{
+    margin-top: 80px;
+    margin-left: 15px;
+    max-width: 39%;
+}
+
+#haltButton{
+    border: 0ch;
+    background-color: white;
+    /* margin-left: 7rem; */
+    font-size: small;
+}
+#removeStop{
+    border: 0ch;
+    background-color: white;
+    /* margin-left: 7rem; */
+    font-size: small;
+}
+
+.haltButton{
+text-align: center;
+margin-right: 220px;
+/* font-family: "sans-serif"; */
+}
+
+@media(max-width:500px)
+{
+    #myButton{
+        font-size: small;
+    }
+}
+
+@media(max-width:386px)
+{
+    #haltButton{
+        font-size:x-small;
+    }
+
+}
+
+.OutputDistance{
+    margin-top: 100px;
+    background-color: #edf3f8;
+    min-width: 39%;
+    margin-left: 15px;
+    border-radius: 4px;
+    padding-left: 10px;
+    
+}
